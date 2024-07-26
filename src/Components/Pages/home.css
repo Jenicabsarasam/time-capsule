@@ -1,0 +1,20 @@
+.front{
+    background-image: linear-gradient(#00000e,#015196,black);
+    height: 550px;
+}
+.front-img{
+    object-fit: contain;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    float: left;
+}
+.heading{
+    color: white;
+    text-align: center;
+    padding-top: 2em;
+    text-shadow: 2px 1px 5px rgb(175, 183, 250);
+}
+.navbartop{
+    background-color: #00000e;
+    
+}
