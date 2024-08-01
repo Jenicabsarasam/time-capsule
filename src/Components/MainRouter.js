@@ -3,7 +3,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import SignIn from './Pages/SignIn';
-import Scrollable from './Pages/Scrollable'
+import ImageUpload from './Pages/ImageUpload';
 import NotFound from './Pages/NotFound';
 import {Routes,Route,Link } from 'react-router-dom';
 import { Navbar,Container,Nav } from 'react-bootstrap';
@@ -22,7 +22,7 @@ const MainRouter = () => {
             <Nav.Link className='text-white' as={Link} to='/About'>About</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/Contact'>Contact</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/SignIn'>SignIn</Nav.Link>
-            <Nav.Link className='text-white' as={Link} to='/Scrollable'>Scrollable</Nav.Link>
+            <Nav.Link className='text-white' as={Link} to='/ImageUpload'>ImageUpload</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -33,7 +33,7 @@ const MainRouter = () => {
         <Route path="About" element={ <About/> } />
         <Route path="Contact" element={ <Contact/> } />
         <Route path="SignIn" element={ <SignIn/> } />
-        <Route path="Scrollable" element={ <Scrollable/> } />
+        <Route path="ImageUpload" element={ <ImageUpload/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
     </div>

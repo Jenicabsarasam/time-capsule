@@ -1,0 +1,32 @@
+.main{
+    background-image: linear-gradient(to bottom,rgb(15, 14, 14),rgb(25, 2, 2));
+}
+  .subBox1{
+   object-fit: cover;
+   object-position: center;
+   margin-left: 10%;
+   width: 75%;
+   height: 85%;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   
+  }
+  .subBox1:hover{
+    box-shadow: 0 0 0 2px rgba(112, 75, 75, 0.7);
+    transition: 1s;
+  }
+  .subBox2{
+    background-color: white;
+    width: 75%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    font-size: large;
+    border: 3px solid rgb(104, 64, 64);
+ }
+  .box1,.box2{
+    flex: 1;
+  }
+  .form{
+    padding: 12px;
+  }
