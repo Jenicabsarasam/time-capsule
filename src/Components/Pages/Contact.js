@@ -1,6 +1,6 @@
 import {useState,React} from 'react';
 import './contact.css';
-import {Offcanvas,Tooltip,OverlayTrigger} from 'react-bootstrap';
+import {Offcanvas,Tooltip,OverlayTrigger, Container} from 'react-bootstrap';
 import top from './Images/purplebg.jpeg';
 import bottom from './Images/purplebottom.jpeg';
 import send from './Images/send.png';
@@ -43,7 +43,7 @@ const Contact = () => {
   );
 
   return (
-    <>
+    <Container>
     <div className='box'>
       <div className='d-flex'>
         <img src={top} alt="top" style={{width:'100%'}}></img>
@@ -76,7 +76,7 @@ const Contact = () => {
           </OverlayTrigger>  
         </Offcanvas.Body>
     </Offcanvas>
-    </>
+    </Container>
   )
 }
 
