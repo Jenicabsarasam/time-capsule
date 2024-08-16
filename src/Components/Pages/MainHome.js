@@ -1,6 +1,6 @@
 import React from 'react'
 import './MainHome.css'
-import backgroundVideo from './Images/nightSky.mp4'
+import backgroundVideo from './Images/stars.mp4'
 import { Container,Row ,Col,Button} from 'react-bootstrap'
 import { useNavigate } from 'react-router'
 
@@ -22,7 +22,7 @@ const MainHome = () => {
       </video>
       <Row className='content-center'>
           <h1 className='website-name'>Time Capsule</h1>
-          <p className='website-line'>A line describing site...</p>
+          <p className='website-line'>Treasure your memories in this Time Travel Vault.</p>
           <Col>
           <Button onClick={()=>knowMore()}>Explore more</Button>
         </Col>
