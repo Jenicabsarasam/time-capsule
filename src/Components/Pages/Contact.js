@@ -50,11 +50,11 @@ const Contact = () => {
       </div>
       <div className='d-flex bg-white justify-content-around'>
         <div>
-          <h4 className='contact'><img src={phone}></img> 9123467854</h4>
-          <h4 className='contact'><img src={insta}></img> time_travel</h4>
-          <h4 className='contact'><img src={fb}></img> time capsule</h4>
-          <h4 className='contact'><img src={mail}></img> timecapsule@gmail.com</h4>
-          <h4 className='contact'><img src={x}></img> timecapsulzz</h4>
+          <h4 className='contact'><img src={phone} alt='phone'></img> 9123467854</h4>
+          <h4 className='contact'><img src={insta} alt='insta'></img> time_travel</h4>
+          <h4 className='contact'><img src={fb} alt='facebook'></img> time capsule</h4>
+          <h4 className='contact'><img src={mail} alt='email'></img> timecapsule@gmail.com</h4>
+          <h4 className='contact'><img src={x} alt='x'></img> timecapsulzz</h4>
           <animated.input type='image' src={msg} alt="send a message" onClick={handleShow} onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)} style={size}/>   
          </div>
         <div>
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
       </div>
       <div className='d-flex'>
-        <img src={bottom} style={{width:'100%'}}></img>
+        <img src={bottom} style={{width:'100%'}} alt='background'></img>
       </div>
     </div>
     <Offcanvas show={show} onHide={handleClose} placement='bottom'>
