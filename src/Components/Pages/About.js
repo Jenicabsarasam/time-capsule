@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router';
-
+import Butterfly from './Images/jar-blur-2.png'
 import './about.css'
 import { useSpring ,animated} from '@react-spring/web';
 import { Button, Container, Row, Col } from 'react-bootstrap';
@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <>
-    <Container fluid className='no-padding'>
+    <Container fluid className='no-padding section'>
       <Row>
         <Col>
           <video autoPlay loop muted id='bgVideo'>
@@ -39,12 +39,36 @@ const About = () => {
         </Col>
       </Row>
       <Row>
-        
+        <Col>
+          <h1>Time Vault</h1>
+        </Col>
+        <Col>
+          <h2>Echoing Memories</h2>
+        </Col>
       </Row>
+    </Container>
+    <Container fluid className='no-padding section'>
+      <Row>
+      <Col>
+        <img src={Butterfly} className='front-img' alt='butterflyimage'/>
+      </Col>
+      <Col className='front'>
+        <animated.h1 className='heading' style={headSize}>Capture your memories</animated.h1> 
+        <animated.div className='imgdiv' onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)} style={sizeDec}>
+          <img src={mountain} className='bg' alt='mountain'/> 
+          <div>
+            <h1 className='text-block-head'>Some catchy title</h1>
+            <h4 className='text-block-p'>sentence on time capsule</h4>
+            <Button className='text-block-btn' onClick={()=> goToSign()}>SignIn</Button>
+          </div>
+        </animated.div>       
+      </Col>
+      </Row>
+    </Container>
         
-
       
-  </Container> 
+      
+  
     </>
   );
 }
