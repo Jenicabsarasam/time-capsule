@@ -9,7 +9,7 @@ import NotFound from './Pages/NotFound';
 import MainHome from './Pages/MainHome';
 import {Routes,Route,Link } from 'react-router-dom';
 import { Navbar,Container,Nav } from 'react-bootstrap';
-import './Pages/home.css'
+import './Pages/Router.css'
 
 const MainRouter = () => {
   return (
