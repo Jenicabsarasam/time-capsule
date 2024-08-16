@@ -1,0 +1,34 @@
+#bgVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%,-50%);
+}
+.no-padding{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.content-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+  }
+.website-name{
+    color: white;
+}
+.website-line{
+    color: white;
+}
