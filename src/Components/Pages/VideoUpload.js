@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Accordion,Button,Card,Container,Col,Row} from 'react-bootstrap';
+import { Accordion,Button,Card } from 'react-bootstrap';
 import ImageUploading from 'react-images-uploading';
 import './Upload.css'
 import './options.css'
@@ -19,13 +19,13 @@ const VideoUpload = () => {
     };
     
   return (
-    <Container>
-      <Row>
+    <>
+      <div>
         <h1 className='text-center'>Welcome !</h1>
         <p>Are you ready to capture the moments...</p>
-      </Row>
-      <Row>
-        <Col>
+      </div>
+      <div className='d-flex justify-content-between m-3'>
+        <div>
             <Accordion className='optionBox'>
             <Accordion.Item eventKey="0">
             <Accordion.Header>
@@ -66,24 +66,22 @@ const VideoUpload = () => {
             </Accordion.Body>
             </Accordion.Item>
             </Accordion>
-        </Col>
-        <Col>
-            <Accordion className='optionBox'>
-                <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                    <h4>Upload Video</h4>
-                    <img src={video} style={{width:'50px',marginRight:'20px'}}></img>
-                </Accordion.Header>
-                <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                t laborum.
-                </Accordion.Body>
-                </Accordion.Item>
+        </div>
+        <div>
+        <Accordion className='optionBox'>
+            <Accordion.Item eventKey="0">
+            <Accordion.Header>
+                <h4>Upload Video</h4>
+                <img src={video} style={{width:'50px',marginRight:'20px'}}></img>
+            </Accordion.Header>
+            <Accordion.Body>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            t laborum.
+            </Accordion.Body>
+            </Accordion.Item>
             </Accordion>
-        </Col>
-    </Row>
-    <Row>
-        <Col>
+        </div>
+        <div>
         <Accordion className='optionBox'>
             <Accordion.Item eventKey="0">
             <Accordion.Header>
@@ -95,9 +93,9 @@ const VideoUpload = () => {
             t laborum.
             </Accordion.Body>
             </Accordion.Item>
-        </Accordion>
-        </Col>
-        <Col>
+            </Accordion>
+        </div>
+        <div>
         <Accordion className='optionBox'>
             <Accordion.Item eventKey="0">
             <Accordion.Header>
@@ -110,10 +108,11 @@ const VideoUpload = () => {
             </Accordion.Body>
             </Accordion.Item>
             </Accordion>
-        </Col>    
-        </Row>
+        </div>
+        
+      </div>
     
-    </Container>
+    </>
 
   )
 }

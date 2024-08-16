@@ -1,0 +1,30 @@
+.box{
+    width: 600px;    
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.offmessagehead{
+    background-color: rgb(106, 52, 136);
+    color: white;
+}
+.sendicon{
+    width: 28px;
+    margin-left: 10px;
+    align-items: center;
+}
+.inputbox{
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    padding-left: 15px;
+}
+.contact{
+    font-family: 'Segoe UI', Tahoma;
+    font-style: italic;
+    margin-left:25px ;
+    margin-top: 10px;
+}

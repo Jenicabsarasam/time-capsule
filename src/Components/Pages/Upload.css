@@ -2,14 +2,10 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 15px;
+    gap: 8px;
+    margin: 5px;
 }
 .pic{
     object-fit: contain;
-    height: 350px;
-}
-.imgContainer{
-    background-image: linear-gradient(rgb(220, 220, 168),rgb(168, 227, 225));
-    
+    height: 50%;
 }

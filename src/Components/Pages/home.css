@@ -8,6 +8,11 @@
     margin-left: 0px;
     margin-bottom: 5px;
     float: left;
+    width: 300px;
+}
+.front-img:hover{
+    width: 307px;
+    transition: 1s;
 }
 .heading{
     color: white;
@@ -19,15 +24,10 @@
     background-color: #00000e;   
 }
 .bg{
-    width: 600px;
-    height: 300px;
+    width: 550px;
     margin-left: 50px;
     margin-top: 30px;
     
-}
-.bg:hover{
-    border-radius:20px;
-    box-shadow: 0 0 10px rgb(123, 123, 125);
 }
 .imgdiv{
     position: relative;
