@@ -8,6 +8,7 @@
     color: white;
     text-align: center;
     text-shadow: 2px 1px 5px rgb(175, 183, 250);
+    margin: 15px;
 }
 #bgVideo{
     position: absolute;
@@ -23,7 +24,7 @@
     transform: translate(-50%,-50%);
 }
 .section{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
 }
 .jar-butterfly{
@@ -39,6 +40,9 @@
 }
 .secondpg{
     background-color: black;
+}
+.secondpg-text{
+    color: white;
 }
 .footer{
     margin: 0;

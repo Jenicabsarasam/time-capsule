@@ -7,6 +7,7 @@ import { Button, Container, Row, Col } from 'react-bootstrap';
 import sand from './Images/onlysand.png';
 import butter from './Images/onlybutterfly.png';
 import backgroundVideo from './Images/shipNight.mp4'
+import crystal from './Images/crystalBall.jpg';
 import sea from './Images/Sea.jpeg';
 
 
@@ -41,7 +42,7 @@ const About = () => {
       <Row>
         <Col md='auto'>
             <animated.div  onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)}>
-            <img src={Butterfly} style={{width:"70%"}} alt='jar-butterflies-flying'/> 
+            <img src={crystal} style={{width:"70%",margin:"10px"}} alt='ball'/> 
             </animated.div>
         </Col>
         <Col className='description-block'>
@@ -61,7 +62,7 @@ const About = () => {
         <Col>
           <img src={sand} alt='sand-clock' style={{width:'90%'}}></img>
         </Col>
-        <Col>
+        <Col className='secondpg-text'>
           <h1>Echoes of future</h1>
           <p>ime capsules are fun to make, and even more, fun to open years down the line.
                  A time capsule can be any container that holds objects meant for people to open in the future,
