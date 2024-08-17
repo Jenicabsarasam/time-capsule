@@ -75,6 +75,34 @@ const About = () => {
         </Col>
       </Row>
     </Container>
+    <Container fluid>
+      <Row className='black'>
+        <Col xs={12} md={4}>
+        <div className='container'>
+        <img src={sea} alt="Avatar" className="image"/>
+        <div className="overlay">
+          <div className="text">Hello World</div>
+        </div>
+        </div>
+        </Col>
+        <Col xs={12} md={4}>
+        <div className='container'>
+        <img src={sea} alt="Avatar" className="image"/>
+        <div className="overlay">
+          <div className="text">Hello World</div>
+        </div>
+        </div>
+        </Col>
+        <Col xs={12} md={4}>
+        <div className='container'>
+        <img src={sea} alt="Avatar" className="image"/>
+        <div className="overlay">
+          <div className="text">Hello World</div>
+        </div>
+        </div>
+        </Col>
+      </Row>
+    </Container>
     <Container fluid className='footer'>
       <Row>
         <Col>
