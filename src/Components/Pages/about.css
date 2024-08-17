@@ -23,13 +23,25 @@
     transform: translate(-50%,-50%);
 }
 .section{
-    height: 100vh;
-    position: relative;
+    height: 80vh;
+    width: 100%;
 }
 .jar-butterfly{
     object-fit: contain;
     height: 50%;
 }
 .bg{
-    
+    background-image: linear-gradient(#00000e,#015196,black);
+    position: relative;
+}
+.description-block{
+    color: white;
+}
+.secondpg{
+    background-color: black;
+}
+.footer{
+    margin: 0;
+    background-color: black;
+    color: rgb(161, 161, 161);
 }

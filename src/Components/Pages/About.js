@@ -4,7 +4,6 @@ import Butterfly from './Images/jar-blur-2.png'
 import './about.css'
 import { useSpring ,animated} from '@react-spring/web';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import mountain from './Images/fullMountain.jpg';
 import sand from './Images/onlysand.png';
 import butter from './Images/onlybutterfly.png';
 import backgroundVideo from './Images/shipNight.mp4'
@@ -16,7 +15,7 @@ const About = () => {
 
   const headSize=useSpring(
     {
-      fontSize: isToggle? '40px' : '30px', 
+      fontSize: isToggle? '43px' : '35px', 
     }
   )
   const navigate=useNavigate()
@@ -27,7 +26,13 @@ const About = () => {
 
   return (
     <>
-    <Container fluid className='no-padding section bg'>
+    <Container fluid className='no-padding section'>
+        <Row><Col>
+          <video autoPlay loop muted id='bgVideo'>
+            <source src={backgroundVideo} type='video/mp4'></source>
+          </video>
+        </Col></Row>
+        
       <Row>
         <Col md='auto'>
           <animated.h1 className='heading' style={headSize}>Capture your memories</animated.h1>
@@ -39,26 +44,46 @@ const About = () => {
             <img src={Butterfly} style={{width:"70%"}} alt='jar-butterflies-flying'/> 
             </animated.div>
         </Col>
-        <Col md='auto'>
-            
-            <h1>halllloooo</h1>
+        <Col className='description-block'>
+  
+              <h1>Time Vault</h1>
+              <p>Time capsules are fun to make, and even more, fun to open years down the line.
+                 A time capsule can be any container that holds objects meant for people to open in the future,
+                 whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
+                 Time capsules are fun to make, and even more, fun to open years down the line.                
+              </p> 
+          
         </Col>
       </Row>
     </Container>
-    <Container fluid className='no-padding section'>
+    <Container fluid className='section secondpg'>
       <Row>
         <Col>
-          <video autoPlay loop muted id='bgVideo'>
-            <source src={backgroundVideo} type='video/mp4'></source>
-          </video>
+          <img src={sand} alt='sand-clock' style={{width:'90%'}}></img>
+        </Col>
+        <Col>
+          <h1>Echoes of future</h1>
+          <p>ime capsules are fun to make, and even more, fun to open years down the line.
+                 A time capsule can be any container that holds objects meant for people to open in the future,
+                 whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
+                 Time capsules are fu
+          </p>
+        </Col>
+        <Col>
+          <img src={butter} alt='sand-clock' style={{width:'70%'}}></img>
         </Col>
       </Row>
+    </Container>
+    <Container fluid className='footer'>
       <Row>
         <Col>
-          <h1>Time Vault</h1>
+          <p>Footer</p>
         </Col>
         <Col>
-          <h2>Echoing Memories</h2>
+          <p>Footer</p>
+        </Col>
+        <Col>
+          <p>Footer</p>
         </Col>
       </Row>
     </Container>
