@@ -8,15 +8,12 @@ import mountain from './Images/fullMountain.jpg';
 import sand from './Images/onlysand.png';
 import butter from './Images/onlybutterfly.png';
 import backgroundVideo from './Images/shipNight.mp4'
+import sea from './Images/Sea.jpeg';
 
 
 const About = () => {
   const [isToggle,setToggle]=useState(false);
-  const sizeDec=useSpring(
-    {
-      width: isToggle? '500px' : '550px',
-    }
-  )
+
   const headSize=useSpring(
     {
       fontSize: isToggle? '40px' : '30px', 
@@ -30,6 +27,24 @@ const About = () => {
 
   return (
     <>
+    <Container fluid className='no-padding section bg'>
+      <Row>
+        <Col md='auto'>
+          <animated.h1 className='heading' style={headSize}>Capture your memories</animated.h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col md='auto'>
+            <animated.div  onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)}>
+            <img src={Butterfly} style={{width:"70%"}} alt='jar-butterflies-flying'/> 
+            </animated.div>
+        </Col>
+        <Col md='auto'>
+            
+            <h1>halllloooo</h1>
+        </Col>
+      </Row>
+    </Container>
     <Container fluid className='no-padding section'>
       <Row>
         <Col>
@@ -47,24 +62,7 @@ const About = () => {
         </Col>
       </Row>
     </Container>
-    <Container fluid className='no-padding section'>
-      <Row>
-      <Col>
-        <img src={Butterfly} className='front-img' alt='butterflyimage'/>
-      </Col>
-      <Col className='front'>
-        <animated.h1 className='heading' style={headSize}>Capture your memories</animated.h1> 
-        <animated.div className='imgdiv' onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)} style={sizeDec}>
-          <img src={mountain} className='bg' alt='mountain'/> 
-          <div>
-            <h1 className='text-block-head'>Some catchy title</h1>
-            <h4 className='text-block-p'>sentence on time capsule</h4>
-            <Button className='text-block-btn' onClick={()=> goToSign()}>SignIn</Button>
-          </div>
-        </animated.div>       
-      </Col>
-      </Row>
-    </Container>
+    
         
       
       
