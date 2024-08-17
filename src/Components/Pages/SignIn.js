@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaUser, FaLock } from "react-icons/fa";
+import { FaUser, FaLock,FaPhone} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Form} from 'react-bootstrap';
 import './SignIn.css'
@@ -146,6 +146,7 @@ const SignIn = () => {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}/>
+                <FaUser className='icon'/>
             </div>
             <div className="input-box">
               <input
@@ -155,6 +156,8 @@ const SignIn = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
+              <MdEmail className='icon' />
+
             </div>
             <div className="input-box">
               <input
@@ -164,6 +167,7 @@ const SignIn = () => {
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
               />
+              <FaPhone className='icon'/>
             </div>
             <div className="input-box">
               <input
@@ -173,6 +177,7 @@ const SignIn = () => {
                 value={pass}
                 onChange={(e) => setPass(e.target.value)}
               />
+              <FaLock className='icon'/>
             </div>
             <div className="input-box">
               <input
@@ -182,6 +187,7 @@ const SignIn = () => {
                 value={repass}
                 onChange={(e) => setRepass(e.target.value)}
               />
+              <FaLock className='icon'/>
             </div>
             <div className="remember-forgot">
               <label>
@@ -194,6 +200,9 @@ const SignIn = () => {
             <button className="form-btn" type="submit">
               Register
             </button>
+            <div className='register-link'>
+                <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
+            </div>
     </Form>
           </div>
         </div>
