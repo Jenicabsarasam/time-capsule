@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Button,Card} from 'react-bootstrap';
 import ImageUploading from 'react-images-uploading';
-import './Upload.css'
+import '../Styles/Upload.css';
 
 
 

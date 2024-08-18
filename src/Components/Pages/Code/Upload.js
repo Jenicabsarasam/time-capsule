@@ -1,13 +1,13 @@
 import React from 'react'
-import ImageUpload from './ImageUpload';
-import VideoUpload from './VideoUpload';
-import TextUpload from './TextUpload';
-import AudioUpload from './AudioUpload';
-import './Upload.css';
-import pic from './Images/image.png';
-import video from './Images/video-chat.png';
-import audio from './Images/sound.png';
-import text from './Images/note.png';
+import ImageUpload from '../Code/ImageUpload';
+import VideoUpload from '../Code/VideoUpload';
+import TextUpload from '../Code/TextUpload';
+import AudioUpload from '../Code/AudioUpload';
+import '../Styles/Upload.css';
+import pic from '../Assets/Images/image.png';
+import video from '../Assets/Images/video-chat.png';
+import audio from '../Assets/Images/sound.png';
+import text from '../Assets/Images/note.png';
 import { Container,Row,Col,Accordion} from 'react-bootstrap';
 
 const Upload = () => {

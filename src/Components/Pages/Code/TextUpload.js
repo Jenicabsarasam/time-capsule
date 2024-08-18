@@ -1,5 +1,5 @@
 import React from 'react'
-import './Upload.css';
+import '../Styles/Upload.css';
 
 const TextUpload = () => {
   return (

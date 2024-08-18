@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaUser, FaLock,FaPhone} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Form} from 'react-bootstrap';
-import './SignIn.css'
+import '../Styles/SignIn.css';
 import { useNavigate } from 'react-router';
 
 const SignIn = () => {

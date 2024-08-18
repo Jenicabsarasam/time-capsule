@@ -1,14 +1,14 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router';
-import Butterfly from './Images/jar-blur-2.png'
-import './about.css'
+import Butterfly from '../Assets/Images/jar-blur-2.png';
+import '../Styles/about.css';
 import { useSpring ,animated} from '@react-spring/web';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import sand from './Images/onlysand.png';
-import butter from './Images/onlybutterfly.png';
-import backgroundVideo from './Images/shipNight.mp4'
-import crystal from './Images/crystalBall.jpg';
-import sea from './Images/Sea.jpeg';
+import sand from '../Assets/Images/onlysand.png';
+import butter from '../Assets/Images/onlybutterfly.png';
+import backgroundVideo from '../Assets/Videos/shipNight.mp4'
+import crystal from '../Assets/Images/crystalBall.jpg';
+import sea from '../Assets/Images/Sea.jpeg';
 
 
 const About = () => {

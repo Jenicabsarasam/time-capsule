@@ -1,17 +1,17 @@
 import {useState,React} from 'react';
-import './contact.css';
+import '../Styles/contact.css';
 import {Offcanvas,Tooltip,OverlayTrigger, Container} from 'react-bootstrap';
-import top from './Images/purplebg.jpeg';
-import bottom from './Images/purplebottom.jpeg';
-import send from './Images/send.png';
-import flying from './Images/Butterfly Freedom Sticker - Butterfly Freedom Pretty - Discover & Share GIFs.gif';
+import top from '../Assets/Images/purplebg.jpeg';
+import bottom from '../Assets/Images/purplebottom.jpeg';
+import send from '../Assets/Images/send.png';
+import flying from '../Assets/Images/Butterfly Freedom Sticker - Butterfly Freedom Pretty - Discover & Share GIFs.gif';
 import { useSpring,animated } from '@react-spring/web';
-import fb from './Images/fb.png';
-import insta from './Images/insta.png';
-import mail from './Images/mail.png';
-import phone from './Images/phone.png';
-import x from './Images/X.png';
-import msg from './Images/messageicon.png'
+import fb from '../Assets/Images/fb.png';
+import insta from '../Assets/Images/insta.png';
+import mail from '../Assets/Images/mail.png';
+import phone from '../Assets/Images/phone.png';
+import x from '../Assets/Images/X.png';
+import msg from '../Assets/Images/messageicon.png'
 
 
 const Contact = () => {

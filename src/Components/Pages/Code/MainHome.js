@@ -1,6 +1,6 @@
 import React from 'react'
-import './MainHome.css'
-import backgroundVideo from './Images/stars.mp4'
+import '../Styles/MainHome.css'
+import backgroundVideo from '../Assets/Videos/stars.mp4'
 import { Container,Row ,Col,Button} from 'react-bootstrap'
 import { useNavigate } from 'react-router'
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import './Faq.css'
-import qn from './Images/qnMarkbg.jpeg'
-import { Accordion } from 'react-bootstrap'
+import '../Styles/Faq.css';
+import qn from '../Assets/Images/qnMarkbg.jpeg';
+import { Accordion } from 'react-bootstrap';
 
 const Faq = () => {
   return (
@@ -64,7 +64,7 @@ const Faq = () => {
       </Accordion>
       </div>
       <div>
-        <img src={qn} style={{height:'300px'}}/>
+        <img src={qn} style={{height:'300px'}} alt='qn mark symbol'/>
       </div>
     </div>
     </>
