@@ -3,7 +3,7 @@ import About from './Pages/About';
 import Faq from './Pages/Faq';
 import Contact from './Pages/Contact';
 import SignIn from './Pages/SignIn';
-import ImageUpload from './Pages/ImageUpload';
+import Upload from './Pages/Upload';
 import VideoUpload from './Pages/VideoUpload';
 import NotFound from './Pages/NotFound';
 import MainHome from './Pages/MainHome';
@@ -25,7 +25,7 @@ const MainRouter = () => {
             <Nav.Link className='text-white' as={Link} to='/Faq'>Faq</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/Contact'>Contact</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/SignIn'>SignIn</Nav.Link>
-            <Nav.Link className='text-white' as={Link} to='/ImageUpload'>ImageUpload</Nav.Link>
+            <Nav.Link className='text-white' as={Link} to='/Upload'>Upload</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/VideoUpload'>VideoUpload</Nav.Link>
             
           </Nav>
@@ -39,7 +39,7 @@ const MainRouter = () => {
         <Route path="/Faq" element={ <Faq/> } />
         <Route path="/Contact" element={ <Contact/> } />
         <Route path="/SignIn" element={ <SignIn/> } />
-        <Route path="/ImageUpload" element={ <ImageUpload/> } />
+        <Route path="/Upload" element={ <Upload/> } />
         <Route path="/VideoUpload" element={ <VideoUpload/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>

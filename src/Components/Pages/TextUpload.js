@@ -1,12 +1,12 @@
 import React from 'react'
 import './Upload.css';
 
-const VideoUpload = () => {
+const TextUpload = () => {
   return (
     <div>
-      <h1>Video upload code</h1>
+      <h1>Text upload code</h1>
     </div>
   )
 }
 
-export default VideoUpload
+export default TextUpload

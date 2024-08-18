@@ -1,15 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
-import { Accordion,Button,Card,Container,Col,Row} from 'react-bootstrap';
+import { Button,Card} from 'react-bootstrap';
 import ImageUploading from 'react-images-uploading';
 import './Upload.css'
-import './options.css'
-import pic from './Images/image.png';
-import video from './Images/video-chat.png';
-import audio from './Images/sound.png';
-import text from './Images/note.png';
 
-const VideoUpload = () => {
+
+
+const ImageUpload = () => {
     const [images,setImages]=useState([]);
     const maxNumber=50;
 
@@ -19,20 +16,7 @@ const VideoUpload = () => {
     };
     
   return (
-    <Container>
-      <Row>
-        <h1 className='text-center'>Welcome !</h1>
-        <p>Are you ready to capture the moments...</p>
-      </Row>
-      <Row>
-        <Col>
-            <Accordion className='optionBox'>
-            <Accordion.Item eventKey="0">
-            <Accordion.Header>
-                <h4>Upload Image</h4>
-                <img src={pic} style={{width:'50px',marginRight:'20px'}}></img>
-            </Accordion.Header>
-            <Accordion.Body>
+
                     <ImageUploading multiple value={images} onChange={onChange} maxNumber={maxNumber} dataURLKey='data_url'
                 acceptType={["jpg","png","jpeg"]}
                 >
@@ -63,59 +47,8 @@ const VideoUpload = () => {
                     )
                     }
                 </ImageUploading>
-            </Accordion.Body>
-            </Accordion.Item>
-            </Accordion>
-        </Col>
-        <Col>
-            <Accordion className='optionBox'>
-                <Accordion.Item eventKey="0">
-                <Accordion.Header>
-                    <h4>Upload Video</h4>
-                    <img src={video} style={{width:'50px',marginRight:'20px'}}></img>
-                </Accordion.Header>
-                <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                t laborum.
-                </Accordion.Body>
-                </Accordion.Item>
-            </Accordion>
-        </Col>
-    </Row>
-    <Row>
-        <Col>
-        <Accordion className='optionBox'>
-            <Accordion.Item eventKey="0">
-            <Accordion.Header>
-                <h4>Upload Audio</h4>
-                <img src={audio} style={{width:'50px',marginRight:'20px'}}></img>
-            </Accordion.Header>
-            <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            t laborum.
-            </Accordion.Body>
-            </Accordion.Item>
-        </Accordion>
-        </Col>
-        <Col>
-        <Accordion className='optionBox'>
-            <Accordion.Item eventKey="0">
-            <Accordion.Header>
-                <h4>Add a note</h4>
-                <img src={text} style={{width:'50px',marginRight:'20px'}}></img>
-            </Accordion.Header>
-            <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            t laborum.
-            </Accordion.Body>
-            </Accordion.Item>
-            </Accordion>
-        </Col>    
-        </Row>
-    
-    </Container>
-
+            
   )
 }
 
-export default VideoUpload
+export default ImageUpload

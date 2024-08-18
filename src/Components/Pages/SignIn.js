@@ -32,7 +32,7 @@ const SignIn = () => {
       //return false;
    // }
     alert('Have to verify with database'); 
-    navigate('/ImageUpload');
+    navigate('/Upload');
     clearLogin();
     
   };
