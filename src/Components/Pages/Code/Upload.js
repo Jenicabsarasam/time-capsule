@@ -9,9 +9,14 @@ import video from '../Assets/Images/video-chat.png';
 import audio from '../Assets/Images/sound.png';
 import text from '../Assets/Images/note.png';
 import { Container,Row,Col,Accordion,Button} from 'react-bootstrap';
+import { useNavigate } from 'react-router';
 
 
 const Upload = () => {
+    const navigate=useNavigate();
+    const timePage=()=>{
+        navigate('./TimePicker');
+    }
   return (
     <>
     <Container>
@@ -76,7 +81,7 @@ const Upload = () => {
         </Col>    
      </Row>
      <Row>
-        <Button variant='outline-success' className='m-3 p-3'>Submit All</Button>
+        <Button variant='outline-success' className='m-3 p-3' onClick={()=>timePage()}>Submit All</Button>
      </Row>
     
     </Container>

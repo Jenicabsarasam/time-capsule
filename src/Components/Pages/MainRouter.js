@@ -6,6 +6,7 @@ import SignIn from './Code/SignIn';
 import Upload from './Code/Upload';
 import NotFound from './Code/NotFound';
 import MainHome from './Code/MainHome';
+import TimePicker from './Code/TimePicker';
 import {Routes,Route,Link } from 'react-router-dom';
 import { Navbar,Container,Nav } from 'react-bootstrap';
 import './Styles/Router.css'
@@ -24,7 +25,8 @@ const MainRouter = () => {
             <Nav.Link className='text-white' as={Link} to='/Faq'>Faq</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/Contact'>Contact</Nav.Link>
             <Nav.Link className='text-white' as={Link} to='/SignIn'>SignIn</Nav.Link>
-            <Nav.Link className='text-white' as={Link} to='/Upload'>Upload</Nav.Link>            
+            <Nav.Link className='text-white' as={Link} to='/Upload'>Upload</Nav.Link>
+            <Nav.Link className='text-white' as={Link} to='/TimePicker'>Time Picker</Nav.Link>            
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -37,6 +39,7 @@ const MainRouter = () => {
         <Route path="/Contact" element={ <Contact/> } />
         <Route path="/SignIn" element={ <SignIn/> } />
         <Route path="/Upload" element={ <Upload/> } />
+        <Route path="/TimePicker" element={ <TimePicker/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
     </div>
