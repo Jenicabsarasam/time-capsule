@@ -6,7 +6,7 @@ import { useSpring ,animated} from '@react-spring/web';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import sand from '../Assets/Images/onlysand.png';
 import butter from '../Assets/Images/onlybutterfly.png';
-import backgroundVideo from '../Assets/Videos/shipNight.mp4'
+import backgroundVideo from '../Assets/Videos/nightSky.mp4'
 import crystal from '../Assets/Images/crystalBall.jpg';
 import sea from '../Assets/Images/Sea.jpeg';
 
