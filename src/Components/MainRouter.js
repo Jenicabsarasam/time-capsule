@@ -35,12 +35,12 @@ const MainRouter = () => {
       <div>
       <Routes>
         <Route path="/" element={ <MainHome/> } />
-        <Route path="About" element={ <About/> } />
-        <Route path="Faq" element={ <Faq/> } />
-        <Route path="Contact" element={ <Contact/> } />
-        <Route path="SignIn" element={ <SignIn/> } />
-        <Route path="ImageUpload" element={ <ImageUpload/> } />
-        <Route path="VideoUpload" element={ <VideoUpload/> } />
+        <Route path="/About" element={ <About/> } />
+        <Route path="/Faq" element={ <Faq/> } />
+        <Route path="/Contact" element={ <Contact/> } />
+        <Route path="/SignIn" element={ <SignIn/> } />
+        <Route path="/ImageUpload" element={ <ImageUpload/> } />
+        <Route path="/VideoUpload" element={ <VideoUpload/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
     </div>

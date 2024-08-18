@@ -3,9 +3,11 @@ import { FaUser, FaLock,FaPhone} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { Form} from 'react-bootstrap';
 import './SignIn.css'
+import { useNavigate } from 'react-router';
 
 const SignIn = () => {
   const [action, setAction] = useState('login'); 
+  const navigate=useNavigate();
   const registrationLink = () => {
     setAction('register');
   };
@@ -25,11 +27,12 @@ const SignIn = () => {
       alert('Enter your registered password');
       return false;
     }    
-    if (!isChecked) {
-      alert('You must agree to the terms and conditions');
-      return false;
-    }
+   // if (!isChecked) {
+     // alert('You must agree to the terms and conditions');
+      //return false;
+   // }
     alert('Have to verify with database'); 
+    navigate('/ImageUpload');
     clearLogin();
     
   };
@@ -97,8 +100,10 @@ const SignIn = () => {
       return false;
     }
 
-    alert('Successfully submitted');
+    alert('Successfully Registeres.Login to Continue');
+    setAction('login');
     clearRegister();
+
   };
 
   const clearRegister = () => {
@@ -125,9 +130,6 @@ const SignIn = () => {
                 <FaLock className='icon'/>
               </div>          
               <div className='remember-forgot'>
-                <label>
-                  <input type='checkbox'/>Remember me 
-                </label>
                 <a href='#'>Forgot password?</a>
               </div>
               <button className='form-btn' type='submit'>Login</button>

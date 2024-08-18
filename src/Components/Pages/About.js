@@ -12,6 +12,11 @@ import sea from './Images/Sea.jpeg';
 
 
 const About = () => {
+  const navigate=useNavigate()
+  const loginPage=()=>{
+    navigate('/SignIn');
+  }
+
   const [isToggle,setToggle]=useState(false);
 
   const headSize=useSpring(
@@ -19,10 +24,7 @@ const About = () => {
       fontSize: isToggle? '43px' : '35px', 
     }
   )
-  const navigate=useNavigate()
-  const goToSign=()=>{
-    navigate("./SignIn");
-  }
+  
 
 
   return (
@@ -53,7 +55,7 @@ const About = () => {
                  whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
                  Time capsules are fun to make, and even more, fun to open years down the line.                
               </p> 
-          
+              <Button onClick={()=>loginPage()}>Login</Button>
         </Col>
       </Row>
     </Container>
@@ -69,6 +71,7 @@ const About = () => {
                  whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
                  Time capsules are fu
           </p>
+          
         </Col>
         <Col>
           <img src={butter} alt='sand-clock' style={{width:'70%'}}></img>
@@ -95,7 +98,7 @@ const About = () => {
         </Col>
         <Col xs={12} md={4}>
         <div className='container'>
-        <img src={sea} alt="Avatar" className="image"/>
+        <img src={Butterfly} alt="Avatar" className="image"/>
         <div className="overlay">
           <div className="text">Hello World</div>
         </div>
