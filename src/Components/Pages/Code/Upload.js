@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router';
 const Upload = () => {
     const navigate=useNavigate();
     const timePage=()=>{
-        navigate('./TimePicker');
+        navigate('/TimePicker');
     }
   return (
     <>

@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
+import '../Styles/about.css';
 import { useNavigate } from 'react-router';
 import Butterfly from '../Assets/Images/jar-blur-2.png';
-import '../Styles/about.css';
 import { useSpring ,animated} from '@react-spring/web';
 import { Button, Container, Row, Col } from 'react-bootstrap';
 import sand from '../Assets/Images/onlysand.png';
