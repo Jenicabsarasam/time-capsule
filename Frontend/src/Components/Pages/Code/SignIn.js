@@ -137,8 +137,8 @@ const SignIn = () => {
         clearLogin();
         navigate('/Upload'); // Redirect to upload page on successful login
       } else {
-        setLoginStatus(response.data.message);
-        clearLogin(); // Show the message from the backend
+        setLoginStatus(response.data.message);// Show the message from the backend
+        clearLogin(); 
       }
     }).catch((error) => {
       console.error("There was an error!", error);
@@ -151,6 +151,7 @@ const SignIn = () => {
       <div className='body'>
         <div className={`wrapper ${action === 'register' ? 'active' : ''}`}>
           <div className={`form-box login ${action === 'login' ? '' : 'hide'}`}>
+
             <Form className='form' id='form1' onSubmit={validateLogin}>
               <h1 className='heading'>Login</h1>
               <div className="input-box">
@@ -172,6 +173,7 @@ const SignIn = () => {
             </Form>
           </div>
           <div className={`form-box register ${action === 'register' ? '' : 'hide'}`}>
+
             <Form className="form" id="form2" onSubmit={validateRegister}>
               <h1 className="heading">Register</h1>
               <div className="input-box">
@@ -201,6 +203,7 @@ const SignIn = () => {
                 </label>
               </div>
               <button className="form-btn" type="submit">Register</button>
+              <button className="form-btn" type='button' onClick={clearRegister} style={{margin:'5px'}}>Clear</button>
               <div className='register-link'>
                 <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
                 <p>{registerStatus}</p>
