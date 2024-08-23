@@ -10,7 +10,7 @@ const SignIn = () => {
   const [action, setAction] = useState('login');
   const navigate = useNavigate();
 
-  // State variables for registration
+
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
@@ -20,7 +20,6 @@ const SignIn = () => {
   const [loginStatus, setLoginStatus] = useState('');
   const [registerStatus, setRegisterStatus] = useState('');
 
-  // Link functions
   const registrationLink = () => setAction('register');
   const loginLink = () => setAction('login');
 
@@ -35,7 +34,7 @@ const SignIn = () => {
       return;
     }
     
-    login(); // Move the clearLogin() and navigate() logic into the login() function
+    login(); 
   };
 
   const clearLogin = () => {
@@ -203,7 +202,7 @@ const SignIn = () => {
                 </label>
               </div>
               <button className="form-btn" type="submit">Register</button>
-              <button className="form-btn" type='button' onClick={clearRegister} style={{margin:'5px'}}>Clear</button>
+              <button className="form-btn" type='button' onClick={clearRegister} style={{marginTop:'7px'}}>Clear</button>
               <div className='register-link'>
                 <p>Already have an account? <a href='#' onClick={loginLink}>Login</a></p>
                 <p>{registerStatus}</p>
