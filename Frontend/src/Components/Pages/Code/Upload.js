@@ -18,11 +18,10 @@ const Upload = () => {
         navigate('/TimePicker');
     }
   return (
-    <>
+    <div className='containerBox'>
     <Container>
       <Row>
-        <h1 className='text-center'>Welcome !</h1>
-        <p>Are you ready to capture the moments...</p>
+        <h1 className='line'>Add Contents of your Time Capsule...</h1>
       </Row>
       <Row>
         <Col>
@@ -81,11 +80,12 @@ const Upload = () => {
         </Col>    
      </Row>
      <Row>
-        <Button variant='outline-success' className='m-3 p-3' onClick={()=>timePage()}>Submit All</Button>
+        <Button variant='success' className='submitAll' onClick={()=>timePage()}>Submit All</Button>
+        (Have to add validation logic to check if number of items selected is not null)
      </Row>
     
     </Container>
-    </>
+    </div>
   )
 }
 

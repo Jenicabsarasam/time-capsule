@@ -4,7 +4,7 @@ import '../Styles/Upload.css';
 const AudioUpload = () => {
   return (
     <div>
-      <h1>Audio upload code</h1>
+      <p>Audio upload code pending</p>
     </div>
   )
 }

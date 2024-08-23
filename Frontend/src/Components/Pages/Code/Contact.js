@@ -1,17 +1,17 @@
 import {useState,React} from 'react';
 import '../Styles/contact.css';
 import {Offcanvas,Tooltip,OverlayTrigger, Container} from 'react-bootstrap';
-import top from '../Assets/Images/purplebg.jpeg';
-import bottom from '../Assets/Images/purplebottom.jpeg';
+import top from '../Assets/Images/blueBg.jpg';
+import bottom from '../Assets/Images/blueBottom.jpg';
 import send from '../Assets/Images/send.png';
-import flying from '../Assets/Images/Butterfly Freedom Sticker - Butterfly Freedom Pretty - Discover & Share GIFs.gif';
+import flying from '../Assets/Images/blueButterfly.gif';
 import { useSpring,animated } from '@react-spring/web';
 import fb from '../Assets/Images/fb.png';
 import insta from '../Assets/Images/insta.png';
 import mail from '../Assets/Images/mail.png';
 import phone from '../Assets/Images/phone.png';
 import x from '../Assets/Images/X.png';
-import msg from '../Assets/Images/messageicon.png'
+import msg from '../Assets/Images/blueMsgIcon.png'
 
 
 const Contact = () => {
@@ -43,7 +43,7 @@ const Contact = () => {
   );
 
   return (
-    <Container>
+    <Container fluid>
     <div className='box'>
       <div className='d-flex'>
         <img src={top} alt="top" style={{width:'100%'}}></img>
@@ -51,9 +51,9 @@ const Contact = () => {
       <div className='d-flex bg-white justify-content-around'>
         <div>
           <h4 className='contact'><img src={phone} alt='phone'></img> 9123467854</h4>
-          <h4 className='contact'><img src={insta} alt='insta'></img> time_travel</h4>
-          <h4 className='contact'><img src={fb} alt='facebook'></img> time capsule</h4>
-          <h4 className='contact'><img src={mail} alt='email'></img> timecapsule@gmail.com</h4>
+          <h4 className='contact'><img src={insta} alt='insta'></img> time_treasure</h4>
+          <h4 className='contact'><img src={fb} alt='facebook'></img> time treasure</h4>
+          <h4 className='contact'><img src={mail} alt='email'></img> timetreasure@gmail.com</h4>
           <h4 className='contact'><img src={x} alt='x'></img> timecapsulzz</h4>
           <animated.input type='image' src={msg} alt="send a message" onClick={handleShow} onMouseEnter={()=>setToggle(true)} onMouseLeave={()=>setToggle(false)} style={size}/>   
          </div>

@@ -1,4 +1,21 @@
-
+.containerBox{
+    background:linear-gradient(to right bottom , black,rgb(29, 29, 29),black);
+    min-height: 100vh;
+    color: white;
+}
+.line{
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 4%;
+}
+.submitAll{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+    font-size: x-large;
+    font-weight: 500;
+}
 .optionBox{
     margin: 10px;
     border: 3px solid rgb(93, 91, 98);
