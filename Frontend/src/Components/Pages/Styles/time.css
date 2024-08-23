@@ -27,7 +27,10 @@
     border: 2px solid rgb(42, 42, 65);
     border-radius: 10px;
     cursor: pointer;
+    font-size: x-large;
+    font-weight: 600;
 }
 .text-box::placeholder{
-    font-size: larger;
+    font-size: large;
+    font-weight: 400;
 }

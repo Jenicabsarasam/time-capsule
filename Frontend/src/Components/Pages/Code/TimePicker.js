@@ -4,7 +4,7 @@ import DateTimePicker from 'react-datetime-picker'
 import 'react-datetime-picker/dist/DateTimePicker.css';
 import 'react-calendar/dist/Calendar.css';
 import 'react-clock/dist/Clock.css';
-import bg from '../Assets/Images/blueBackground.jpeg';
+import bg from '../Assets/Images/blueBackgroundHD.png';
 import '../Styles/time.css';
 
 const TimePicker = () => {
@@ -23,7 +23,7 @@ const TimePicker = () => {
      <Row>
       <Col className='date-section'>
         <h1 className='label'>Chose Date and Time:</h1>
-        <DateTimePicker onChange={setValue} value={value} />      
+        <DateTimePicker onChange={setValue} value={value} className='date-box' />      
       </Col>
      </Row>
     </Container>
