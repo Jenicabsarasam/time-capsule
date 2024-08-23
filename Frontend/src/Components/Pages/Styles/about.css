@@ -1,14 +1,11 @@
 .no-padding{
     padding: 0;
     margin: 0;
-
-
 }
 .heading{
     color: white;
-    text-align: center;
     text-shadow: 2px 1px 5px rgb(175, 183, 250);
-    margin: 15px;
+    margin-left: 80px;
 }
 #bgVideo{
     position: absolute;
@@ -23,28 +20,105 @@
     min-height: 100%;
     transform: translate(-50%,-50%);
 }
-.section{
-    height: 90vh;
-    width: 100%;
-}
-.jar-butterfly{
-    object-fit: contain;
-    height: 50%;
-}
-.bg{
-    background-image: linear-gradient(#00000e,#015196,black);
-    position: relative;
-}
 .description-block{
     color: white;
+    margin-left: 0;
+}
+.what-head{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-color: rgb(179, 178, 178);
+  padding-bottom: 5%;
+}
+.what-is{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 100px;
+}
+.what-line{
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+  color: white;
+  margin-left: 7%;
+  margin-right: 3%;
+}
+@media (max-width: 768px) {
+  .heading {
+      font-size: 28px;
+      margin-left: 20px;
+  }
+
+  .what-head {
+      font-size: 22px;
+      padding-bottom: 3%;
+  }
+
+  .what-is {
+      font-size: 16px;
+      margin-right: 20px;
+  }
+
+  .what-line {
+      font-size: 18px;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+      font-size: 24px;
+      margin-left: 10px;
+  }
+
+  .what-head {
+      font-size: 18px;
+      padding-bottom: 2%;
+  }
+
+  .what-is {
+      font-size: 14px;
+      margin-right: 10px;
+  }
+
+  .what-line {
+      font-size: 16px;
+      margin-left: 3%;
+      margin-right: 3%;
+  }
+}
+.login-btn{
+  font-size: 25px;
+  color: rgb(3, 0, 49);
+  border: 3px solid rgb(3, 1, 31);
+  border-radius: 7px;
+  padding: 7px 7px;
+  font-weight: 900;
+  background: white;
+  box-shadow: 0 0 5px rgb(129, 129, 129);
+  width: 150px;
+  font-family: "Merriweather", serif;
+  opacity: .5;
+}
+.login-btn:hover{
+  background-color: white;
+  opacity: 0.9;
+  color: rgb(3, 1, 31);
 }
 .secondpg{
     background-color: black;
+    height: 90vh;
 }
 .secondpg-text{
     color: white;
     font-style: italic;
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-size: large;
 }
 .footer{
     margin: 0;
@@ -53,38 +127,30 @@
 }
 .container {
     position: relative;
-    width: 70%;
+    width: 50%;
   }
-  
-  /* Make the image to responsive */
   .image {
     width: 100%;
-    height: auto;
+    object-fit: contain;
   }
-  
-  /* The overlay effect (full height and width) - lays on top of the container and over the image */
   .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background: linear-gradient(to right bottom, black,rgb(94, 94, 94),black);
     overflow: hidden;
     width: 100%;
     height: 100%;
     transform: scale(0);
     transition: .3s ease;
   }
-  
-  /* When you mouse over the container, the overlay text will "zoom" in display */
   .container:hover .overlay {
     transform: scale(1);
   }
   .black{
     background-color: black;
   }
-  
-  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
   .text {
     color: white;
     font-size: 20px;
@@ -96,6 +162,6 @@
   }
   @media (max-width: 768px) {
     .container {
-      max-width: 100%; /* Full width on smaller screens */
+      max-width: 100%;
     }
 }
