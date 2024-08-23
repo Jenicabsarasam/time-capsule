@@ -4,7 +4,7 @@ import '../Styles/Upload.css';
 const VideoUpload = () => {
   return (
     <div>
-      <h1>Video upload code</h1>
+      <p>Video upload code Pending</p>
     </div>
   )
 }
