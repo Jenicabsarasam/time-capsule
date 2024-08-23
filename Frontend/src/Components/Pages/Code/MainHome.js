@@ -21,16 +21,17 @@ const MainHome = () => {
         <source src={backgroundVideo} type='video/mp4'></source>
       </video>
       <Row className='content-center'>
-          <h1 className='website-name'>Time Capsule</h1>
-          <p className='website-line'>Treasure your memories in this Time Travel Vault.</p>
-          <Col>
-          <Button onClick={()=>knowMore()}>Explore more</Button>
+          <h1 className='website-name'>Time Treasure</h1>
+          <p className='website-line'>Treasure your memories in this Time Travel Vault.</p>      
+      </Row>  
+      <Row className='btn-row'>
+        <Col>
+          <button onClick={()=>knowMore()} className='button'>Explore More</button>
         </Col>
         <Col>
-          <Button onClick={()=>loginPage()}>Login</Button>
-        </Col>
-      </Row>
-     
+          <button onClick={()=>loginPage()} className='button'>Login Now</button>
+        </Col>  
+      </Row>   
     </Container>
     </>
   )

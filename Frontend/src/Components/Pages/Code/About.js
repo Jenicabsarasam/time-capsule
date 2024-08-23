@@ -25,17 +25,12 @@ const About = () => {
     }
   )
   
-
-
   return (
     <>
     <Container fluid className='no-padding section'>
-        <Row><Col>
           <video autoPlay loop muted id='bgVideo'>
             <source src={backgroundVideo} type='video/mp4'></source>
-          </video>
-        </Col></Row>
-        
+          </video>        
       <Row>
         <Col md='auto'>
           <animated.h1 className='heading' style={headSize}>Capture your memories</animated.h1>
@@ -50,10 +45,7 @@ const About = () => {
         <Col className='description-block'>
   
               <h1>Time Vault</h1>
-              <p>Time capsules are fun to make, and even more, fun to open years down the line.
-                 A time capsule can be any container that holds objects meant for people to open in the future,
-                 whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
-                 Time capsules are fun to make, and even more, fun to open years down the line.                
+              <p>Each countdown transforms your time capsule into a vessel, navigating an ocean of memories, while the tides of the present carry whispered secrets across the waves, reminding you that every moment is a treasure awaiting rediscovery. Above, galaxies beckon, ready to reveal the profound connections between who you were and who you will become—the ultimate journey through time.              
               </p> 
               <Button onClick={()=>loginPage()}>Login</Button>
         </Col>
@@ -66,10 +58,7 @@ const About = () => {
         </Col>
         <Col className='secondpg-text'>
           <h1>Echoes of future</h1>
-          <p>ime capsules are fun to make, and even more, fun to open years down the line.
-                 A time capsule can be any container that holds objects meant for people to open in the future,
-                 whether that be in 5, 10, or even 100 years. A good time capsule will hold its contents safely, preserving them for a future version of yourself, your grandchildren, or even a stranger. Soon you will have the skills to create a time capsule that will thrill and fascinate someone in the future.
-                 Time capsules are fu
+          <p>What if every moment captured was a love letter to your future self? Write it boldly; the stories you plant today will resonate like echoes in the tomorrow.
           </p>
           
         </Col>
