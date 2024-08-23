@@ -26,10 +26,10 @@ const MainHome = () => {
       </Row>  
       <Row className='btn-row'>
         <Col>
-          <button onClick={()=>knowMore()} className='button'>Explore More</button>
+          <Button variant='outline-dark' onClick={()=>knowMore()} className='button'>Explore More</Button>
         </Col>
         <Col>
-          <button onClick={()=>loginPage()} className='button'>Login Now</button>
+          <Button onClick={()=>loginPage()} className='button'>Login Now</Button>
         </Col>  
       </Row>   
     </Container>

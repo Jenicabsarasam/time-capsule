@@ -1,3 +1,19 @@
 .navbartop{
-    background-color: #00000e;   
+    background: linear-gradient(to bottom right,black,rgb(13, 13, 54),black);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-shadow: 2px 1px 5px rgb(179, 179, 180);
+    font-size: larger;
+}
+.home-icon{
+    font-size: 35px;
+    color: white;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.home-icon:hover{
+    color: rgb(184, 202, 212);
 }
