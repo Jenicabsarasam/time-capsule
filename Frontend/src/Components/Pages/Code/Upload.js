@@ -80,7 +80,7 @@ const Upload = () => {
         </Col>    
      </Row>
      <Row>
-        <Button variant='success' className='submitAll' onClick={()=>timePage()}>Submit All</Button>
+        <Button variant='outline-light' className='submitAll' onClick={()=>timePage()}>Submit All</Button>
         (Have to add validation logic to check if number of items selected is not null)
      </Row>
     

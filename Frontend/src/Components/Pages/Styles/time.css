@@ -1,0 +1,33 @@
+.bg-img{
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+}
+.name-section{
+    margin-left: 30%;
+    margin-top: 20%;
+}
+.date-section{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.label{
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    margin-bottom: 3%;
+}
+.text-box{
+    width: 40%;
+    height: 40%;
+    padding: 2% 4%;
+    border: 2px solid rgb(42, 42, 65);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text-box::placeholder{
+    font-size: larger;
+}
