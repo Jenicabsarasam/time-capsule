@@ -134,7 +134,7 @@ const SignIn = () => {
       if (response.data.success) {
         setLoginStatus('Login successful');
         clearLogin();
-        navigate('/Upload'); // Redirect to upload page on successful login
+        navigate('/Dashboard'); // Redirect to dashboard page on successful login
       } else {
         setLoginStatus(response.data.message);// Show the message from the backend
         clearLogin(); 

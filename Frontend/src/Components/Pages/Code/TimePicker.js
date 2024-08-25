@@ -22,7 +22,7 @@ const TimePicker = () => {
      </Row>
      <Row>
       <Col className='date-section'>
-        <h1 className='label'>Chose Date and Time:</h1>
+        <h1 className='label'>Choose Date and Time:</h1>
         <DateTimePicker onChange={setValue} value={value} className='date-box' />      
       </Col>
      </Row>
