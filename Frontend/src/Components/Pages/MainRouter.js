@@ -1,13 +1,12 @@
 import React from 'react';
 import About from './Code/About';
-import Faq from './Code/Faq';
 import Contact from './Code/Contact';
 import SignIn from './Code/SignIn';
 import Upload from './Code/Upload';
 import NotFound from './Code/NotFound';
 import MainHome from './Code/MainHome';
 import TimePicker from './Code/TimePicker';
-import Dashboard from './Code/dashboard';
+import Dashboard from './Code/Dashboard';
 import {Routes,Route,Link } from 'react-router-dom';
 import { Navbar,Container,Nav } from 'react-bootstrap';
 import { ImHome3 } from "react-icons/im";
@@ -23,7 +22,6 @@ const MainRouter = () => {
           <Nav className="me-auto">
             <Nav.Link className='home-icon' as={Link} to='/'><ImHome3 /> </Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/About'>About</Nav.Link>
-            <Nav.Link className='text-white mx-2' as={Link} to='/Faq'>Faq</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/Contact'>Contact</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/SignIn'>SignIn</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/Dashboard'>Dashboard</Nav.Link> 
@@ -37,7 +35,6 @@ const MainRouter = () => {
       <Routes>
         <Route path="/" element={ <MainHome/> } />
         <Route path="/About" element={ <About/> } />
-        <Route path="/Faq" element={ <Faq/> } />
         <Route path="/Contact" element={ <Contact/> } />
         <Route path="/SignIn" element={ <SignIn/> } />
         <Route path="/Upload" element={ <Upload/> } />
