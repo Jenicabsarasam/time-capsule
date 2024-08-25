@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
+const uploadRouter = require('./Upload'); // Import the new upload router
 
 // Initialize the Express application
 const app = express();
@@ -77,6 +78,9 @@ app.post('/login', (req, res) => {
     }
   );
 });
+
+// Use the upload route
+app.use('/Upload', uploadRouter);
 
 // Start the server
 app.listen(4000, () => {

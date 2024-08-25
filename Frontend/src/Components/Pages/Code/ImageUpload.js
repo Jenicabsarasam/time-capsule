@@ -14,24 +14,23 @@ const ImageUpload = () => {
 
     const submitImage = () => {
         const data = new FormData();
-        // Since you're allowing multiple images, we'll upload them one by one.
+        // Append images to FormData
         images.forEach((image) => {
-            data.append("file", image.file);
-            data.append("upload_preset", "TimeCapsule"); // Your upload preset
-            data.append("cloud_name", "dalsvcuxk"); // Your Cloudinary cloud name
-
-            fetch("https://api.cloudinary.com/v1_1/dalsvcuxk/image/upload", {
-                method: "POST",
-                body: data,
-            })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-                // You can store the returned image URL in your database or state
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+            data.append("files", image.file);
+        });
+        data.append("userId", "123"); // Replace with actual user ID
+    
+        fetch("http://localhost:4000/Upload", { // Your backend endpoint
+            method: "POST",
+            body: data,
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            console.log(data);
+            // Handle the response from your backend (e.g., store image URLs)
+        })
+        .catch((err) => {
+            console.log(err);
         });
     };
 
