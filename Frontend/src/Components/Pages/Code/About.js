@@ -8,7 +8,7 @@ import butter from '../Assets/Images/onlybutterfly.png';
 import backgroundVideo from '../Assets/Videos/nightSky.mp4'
 import crystal from '../Assets/Images/crystalBall.jpg';
 import clockman from '../Assets/Images/clockMan.jpeg';
-import time from '../Assets/Images/Time.jpeg';
+import time from '../Assets/Images/Jar.jpg';
 import clock from '../Assets/Images/Vintage Clock _ Dark Aesthetic.jpeg';
 
 

@@ -7,6 +7,7 @@ import Upload from './Code/Upload';
 import NotFound from './Code/NotFound';
 import MainHome from './Code/MainHome';
 import TimePicker from './Code/TimePicker';
+import Dashboard from './Code/dashboard';
 import {Routes,Route,Link } from 'react-router-dom';
 import { Navbar,Container,Nav } from 'react-bootstrap';
 import { ImHome3 } from "react-icons/im";
@@ -24,7 +25,8 @@ const MainRouter = () => {
             <Nav.Link className='text-white mx-2' as={Link} to='/About'>About</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/Faq'>Faq</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/Contact'>Contact</Nav.Link>
-            <Nav.Link className='text-white mx-2' as={Link} to='/SignIn'>SignIn</Nav.Link> 
+            <Nav.Link className='text-white mx-2' as={Link} to='/SignIn'>SignIn</Nav.Link>
+            <Nav.Link className='text-white mx-2' as={Link} to='/Dashboard'>Dashboard</Nav.Link> 
             <Nav.Link className='text-white mx-2' as={Link} to='/Upload'>Upload</Nav.Link>
             <Nav.Link className='text-white mx-2' as={Link} to='/TimePicker'>Time Picker</Nav.Link>                       
           </Nav>
@@ -40,6 +42,7 @@ const MainRouter = () => {
         <Route path="/SignIn" element={ <SignIn/> } />
         <Route path="/Upload" element={ <Upload/> } />
         <Route path="/TimePicker" element={ <TimePicker/> } />
+        <Route path="/Dashboard" element={ <Dashboard/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
     </div>
